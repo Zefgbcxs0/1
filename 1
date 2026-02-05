@@ -1,0 +1,28 @@
+# Базовий клас
+class Tvaryna:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def info(self):
+        print(f"Ім'я: {self.name}, Вік: {self.age}")
+
+# Підклас Собака
+class Sobaka(Tvaryna):
+    def bark(self):
+        print("Гав-гав!")
+
+# Підклас Кіт
+class Kit(Tvaryna):
+    def meow(self):
+        print("Мяу!")
+
+# Створення об'єктів
+dog = Sobaka("Бобік", 3)
+cat = Kit("Мурчик", 2)
+
+dog.info()
+dog.bark()
+
+cat.info()
+cat.meow()
